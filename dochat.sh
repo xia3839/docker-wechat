@@ -97,9 +97,9 @@ function main () {
     -e DOCHAT_DEBUG \
     -e DOCHAT_DPI \
     \
-    -e XMODIFIERS=@im=fcitx \
-    -e GTK_IM_MODULE=fcitx \
-    -e QT_IM_MODULE=fcitx \
+    -e XMODIFIERS=@im=ibus \
+    -e GTK_IM_MODULE=ibus \
+    -e QT_IM_MODULE=ibus \
     -e AUDIO_GID="$(getent group audio | cut -d: -f3)" \
     -e VIDEO_GID="$(getent group video | cut -d: -f3)" \
     -e GID="$(id -g)" \
